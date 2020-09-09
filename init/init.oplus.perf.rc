@@ -19,6 +19,10 @@ service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
     disabled
     oneshot
 
+on early-boot
+    # Disable serial console notification
+    setprop init.svc.console stopped
+
 on property:sys.boot_completed=1
     start oplus-post-boot
 

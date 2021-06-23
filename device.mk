@@ -320,6 +320,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
+# SOC Properties
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.model=SM7325
+
 # System Helper
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.systemhelper@1.0.vendor

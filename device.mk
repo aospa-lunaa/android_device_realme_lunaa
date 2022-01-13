@@ -172,6 +172,7 @@ PRODUCT_PACKAGES += \
     init.oplus.telephony.rc \
     init.oplus.wlan.rc \
     init.qti.ufs.rc \
+    init.oplus.charger.rc \
     init.target.rc \
     ueventd.oplus.rc \
     init.oplus.post_boot.sh

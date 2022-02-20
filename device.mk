@@ -205,6 +205,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
+# LMKD
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.vendor.lmk.force_inkernel_lmk=true
+
 # MGLRU (Multi-gen LRU)
 PRODUCT_VENDOR_PROPERTIES += \
     persist.device_config.mglru_native.lru_gen_config=core

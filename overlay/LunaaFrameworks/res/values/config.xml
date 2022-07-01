@@ -55,6 +55,10 @@
     <integer name="config_autoBrightnessBrighteningLightDebounce">1500</integer>
     <integer name="config_autoBrightnessDarkeningLightDebounce">1500</integer>
 
+    <!-- The type of the light sensor to be used by the display framework for things like
+         auto-brightness. If unset, then it just gets the default sensor of type TYPE_LIGHT. -->
+    <string name="config_displayLightSensorType" translatable="false">qti.sensor.wise_light</string>
+
     <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
          percent. The length of this array is assumed to be one greater than
          config_ambientThresholdLevels. The brightening threshold is calculated as

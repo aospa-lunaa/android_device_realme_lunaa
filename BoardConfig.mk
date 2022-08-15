@@ -89,6 +89,9 @@ BOARD_USES_QCOM_HARDWARE := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := lahaina
 
+# Camera
+TARGET_USES_OPLUS_CAMERA := true
+
 # Display density
 TARGET_SCREEN_DENSITY := 420
 

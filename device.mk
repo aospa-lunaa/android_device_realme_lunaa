@@ -234,6 +234,37 @@ PRODUCT_PACKAGES += \
     OPlusCarrierConfig \
     WifiResTarget
 
+# Oplus camera
+$(call inherit-product, vendor/oplus/camera/camera-vendor.mk)
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/permissions/oplus_camera_default_grant_permissions_list.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/default-permissions/oplus_camera_default_grant_permissions_list.xml \
+    $(LOCAL_PATH)/configs/permissions/privapp-permissions-oplus.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-oplus.xml \
+    $(LOCAL_PATH)/configs/sysconfig/hiddenapi-package-oplus-whitelist.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/hiddenapi-package-oplus-whitelist.xml
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.vendor.camera.privapp.list=com.oplus.camera \
+    ro.com.google.lens.oem_camera_package=com.oplus.camera \
+    ro.com.google.lens.oem_image_package=com.oneplus.gallery
+
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.oplus.system.camera.name=com.oplus.camera \
+    ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight \
+    ro.oplus.camera.video_beauty.prefix=oplus.video.beauty. \
+    ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty \
+    ro.oplus.camera.speechassist=true
+
+# Oplus framework
+PRODUCT_PACKAGES += \
+    oplus-fwk
+
+PRODUCT_BOOT_JARS += \
+    oplus-fwk
+
+# Oplus wrapper
+PRODUCT_BOOT_JARS += \
+    oplus-support-wrapper
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 

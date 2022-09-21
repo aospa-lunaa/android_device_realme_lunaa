@@ -19,3 +19,11 @@ echo 128 > /sys/block/dm-6/queue/read_ahead_kb
 echo 128 > /sys/block/dm-7/queue/read_ahead_kb
 echo 128 > /sys/block/dm-8/queue/read_ahead_kb
 echo 128 > /sys/block/dm-9/queue/read_ahead_kb
+
+# Governor (up/down) rate_limit configuration
+echo 20000 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy0/schedutil/up_rate_limit_us
+echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
+echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
+echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us

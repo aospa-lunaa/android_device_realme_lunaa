@@ -14,3 +14,6 @@ persist.sys.log.awb                 u:object_r:exported_system_prop:s0
 
 # Version
 ro.separate.soft    u:object_r:system_oplus_project_prop:s0
+
+# Sensors
+vendor.sensors.als_correction.    u:object_r:vendor_sensors_als_prop:s0

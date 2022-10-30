@@ -35,6 +35,9 @@
 /(odm|vendor/odm)/bin/hw/vendor\.oplus\.hardware\.oplusSensor@1\.0-service    u:object_r:vendor_hal_oplusSensor_default_exec:s0
 /(odm|vendor/odm)/bin/oplus_sensor_fb                                         u:object_r:vendor_sensors_exec:s0
 
+# Touchpanel
+/proc/touchpanel/game_switch_enable                                                                                  u:object_r:vendor_proc_display:s0
+
 # Vibrator
 /(vendor|system/vendor)/bin/hw/vendor\.qti\.hardware\.vibrator\.service\.lunaa    u:object_r:hal_vibrator_default_exec:s0
 

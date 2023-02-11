@@ -1,6 +1,3 @@
-# Alert Slider
-genfscon proc /tristatekey    u:object_r:vendor_proc_tri_state_key:s0
-
 # Charging
 genfscon proc /wireless                                                u:object_r:vendor_proc_wireless:s0
 genfscon sysfs /devices/platform/soc/soc:oplus,chg_gki/power_supply    u:object_r:vendor_sysfs_usb_supply:s0

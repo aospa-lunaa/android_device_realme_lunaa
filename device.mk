@@ -318,6 +318,9 @@ $(call inherit-product, vendor/realme/lunaa/lunaa-vendor.mk)
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service.oplus
 
+# VINTF
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
 # VNDK
 PRODUCT_COPY_FILES += \
     prebuilts/vndk/v30/arm/arch-arm-armv7-a-neon/shared/vndk-core/libui.so:$(TARGET_COPY_OUT_VENDOR)/lib/libui-v30.so \

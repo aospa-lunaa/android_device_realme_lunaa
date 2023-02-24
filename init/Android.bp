@@ -13,10 +13,10 @@
 // limitations under the License.
 
 cc_library_static {
-    name: "libinit_oplus",
+    name: "libinit_lunaa",
     recovery_available: true,
     shared_libs: ["libbase"],
-    srcs: ["init_oplus.cpp"],
+    srcs: ["init_lunaa.cpp"],
 }
 
 prebuilt_etc {

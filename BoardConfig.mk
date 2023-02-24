@@ -102,10 +102,10 @@ BOARD_KERNEL_SEPARATED_DTBO := true
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-    $(DEVICE_PATH)/oplus_vendor_framework_compatibility_matrix.xml
+    $(DEVICE_PATH)/configs/vintf/oplus_vendor_framework_compatibility_matrix.xml
 
 DEVICE_MANIFEST_FILE += \
-    $(DEVICE_PATH)/manifest.xml
+    $(DEVICE_PATH)/configs/vintf/manifest.xml
 
 # Hacks
 BUILD_BROKEN_DUP_RULES := true

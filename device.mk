@@ -202,22 +202,14 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    AOSPAOnePlus9ProSystemUI \
-    AOSPAOnePlus9SeriesFrameworks \
-    AOSPAOnePlus9SeriesSettings \
-    AOSPAOnePlus9SeriesSystemUI \
-    AOSPAOnePlus9SystemUI \
+    AOSPALunaaFrameworks \
+    AOSPALunaaSystemUI \
     FrameworksResTarget \
-    OnePlus9Frameworks \
-    OnePlus9ProFrameworks \
-    OnePlus9ProSettingsProvider \
-    OnePlus9ProSystemUI \
-    OnePlus9SeriesCarrierConfig \
-    OnePlus9SeriesFrameworks \
-    OnePlus9SeriesSettings \
-    OnePlus9SeriesSystemUI \
-    OnePlus9SettingsProvider \
-    OnePlus9SystemUI \
+    LunaaFrameworks \
+    LunaaSettings \
+    LunaaSettingsProvider \
+    LunaaSystemUI \
+    OPlusCarrierConfig \
     WifiResTarget
 
 # ParanoidDoze

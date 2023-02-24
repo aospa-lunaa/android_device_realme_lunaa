@@ -247,7 +247,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.force_on_dc=true \
     persist.vendor.radio.poweron_opt=1 \
-    persist.vendor.radio.stack_id_1=1
+    persist.vendor.radio.stack_id_1=1 \
+    persist.radio.multisim.config=dsds
 
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     persist.dbg.volte_avail_ovr=1 \

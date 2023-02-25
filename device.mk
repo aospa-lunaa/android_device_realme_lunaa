@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
     init.oplus.wlan.rc \
     init.qti.ufs.rc \
     init.oplus.charger.rc \
+    init.oplus.nfc.rc \
     init.target.rc \
     ueventd.oplus.rc
 
@@ -188,13 +189,27 @@ PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
 # NFC
+$(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
+TARGET_USES_ST_AIDL_NFC := true
+
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor
+    com.android.nfc_extras \
+    libchrome.vendor \
+    NfcNci \
+    SecureElement \
+    Tag
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/nfc/libnfc-hal-st.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-hal-st.conf
+
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.nfc.port=I2C
 
 # Namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/oplus
+    hardware/oplus \
+    hardware/st/nfc
 
 # Neural Networks
 PRODUCT_PACKAGES += \
@@ -236,13 +251,29 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.vendor.qteeconnector.retrying_timeout=2000
 
 # QTI
-TARGET_COMMON_QTI_COMPONENTS := all
+TARGET_COMMON_QTI_COMPONENTS := \
+    adreno \
+    audio \
+    av \
+    bt \
+    display \
+    gps \
+    init \
+    media \
+    overlay \
+    perf \
+    telephony \
+    usb \
+    vibrator \
+    wfd \
+    wlan
 
 # Radio
 PRODUCT_PACKAGES += \
     android.hardware.radio@1.6.vendor \
     android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio.deprecated@1.0.vendor
+    android.hardware.radio.deprecated@1.0.vendor \
+    android.hardware.secure_element@1.2.vendor
 
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.radio.force_on_dc=true \

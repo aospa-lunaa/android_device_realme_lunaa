@@ -1065,6 +1065,8 @@ odm/etc/nfc/libnfc-nci.conf_21675:vendor/etc/libnfc-nci.conf|a5de826035193bd61d1
 odm/etc/nfc/libnfc-st21h_conf.txt_21675:vendor/firmware/libnfc-st21h_conf.txt|64932e83a84a76aeeefb4e2ff22389ae2c948839
 odm/etc/nfc/st21nfc_fw.bin_st21h:vendor/firmware/st21nfc_fw.bin|3375e15716e356a2580e4c8828833f442669e586
 odm/etc/nfc/st21nfc_fw7.bin_st21h:vendor/firmware/st21nfc_fw7.bin|e857d4139163e8a16ae9d0b616e731d3441deda4
+odm/lib/nfc_nci.st21nfc.st.so:vendor/lib/nfc_nci.st21nfc.st.so
+odm/lib64/nfc_nci.st21nfc.st.so:vendor/lib64/nfc_nci.st21nfc.st.so
 
 # PD - BSP
 vendor/bin/pd-mapper|176975902d8f33a0f1581b5f21ea41946469bb55

@@ -53,6 +53,12 @@ prebuilt_etc {
     vendor: true,
 }
 
+prebuilt_etc {
+    name: "init.oplus.nfc.rc",
+    src: "init.oplus.nfc.rc",
+    sub_dir: "init",
+    vendor: true,
+}
 
 prebuilt_etc {
     name: "init.oplus.sensors.rc",

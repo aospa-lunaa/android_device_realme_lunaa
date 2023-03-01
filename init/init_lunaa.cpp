@@ -34,12 +34,12 @@ void OverrideProperty(const char* name, const char* value) {
  */
 void vendor_load_properties() {
     auto device = GetProperty("ro.product.product.device", "");
-    auto rf_version = std::stoi(GetProperty("ro.boot.rf_version", "0"));
     auto prjname = std::stoi(GetProperty("ro.boot.prjname", "0"));
 
     switch (prjname) {
         case 21603: // CN
                OverrideProperty("ro.product.product.model", "RMX3361");
+               OverrideProperty("ro.product.product.device", "RE507C");
             break;
         case 21675: // IN
                OverrideProperty("ro.product.product.model", "RMX3360");

@@ -73,3 +73,9 @@ prebuilt_etc {
     src: "ueventd.oplus.rc",
     device_specific: true,
 }
+
+sh_binary {
+    name: "init.yupik.post_boot.sh",
+    src: "init.yupik.post_boot.sh",
+    vendor: true,
+}

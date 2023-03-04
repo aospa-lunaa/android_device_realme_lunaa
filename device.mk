@@ -196,7 +196,8 @@ PRODUCT_PACKAGES += \
     init.oplus.charger.rc \
     init.oplus.nfc.rc \
     init.target.rc \
-    ueventd.oplus.rc
+    ueventd.oplus.rc \
+    init.yupik.post_boot.sh
 
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \

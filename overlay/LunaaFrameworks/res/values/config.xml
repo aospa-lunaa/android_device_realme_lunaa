@@ -460,6 +460,9 @@
         <item>-1</item>
     </integer-array>
 
+    <!-- Boolean indicating whether display white balance is supported. -->
+    <bool name="config_displayWhiteBalanceAvailable">false</bool>
+
     <!-- Screen brightness when dozing. -->
     <integer name="config_screenBrightnessDoze">30</integer>
     <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>

@@ -1,5 +1,5 @@
 ## Sections labeled with 'BSP' are from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0.
-## Sections labeled with 'RUI' are from RMX3360_11.F.03.
+## Sections labeled with 'RUI' are from RMX3360_11.F.04.
 
 # ADSPRPC - BSP
 vendor/bin/adsprpcd|e97a90171313051e2994d1a3d0985de59f586788
@@ -107,10 +107,10 @@ vendor/lib64/rfsa/adsp/libsns_low_lat_stream_skel.so|c30bb30eecf968e02f72c055d3c
 vendor/firmware/a660_gmu.bin|607402e7c1c49f486258e5e02780e74fcf7311e1
 vendor/firmware/a660_sqe.fw|8e6becfbcff6ff6e64b5edb6f135cc6f656d4ee1
 vendor/firmware/a660_zap.b00|f8df59bf1c76d6cceb152cfd58142af4e0cdabb5
-vendor/firmware/a660_zap.b01|30d85730b4c89850b0d8ed8c2d904f541913082d
+vendor/firmware/a660_zap.b01|4c17010422e00ca6af06dfbc10422edf5d62bd1d
 vendor/firmware/a660_zap.b02|bcbdf56fca034c66a9e44242587ed25a1ffe2abe
-vendor/firmware/a660_zap.elf|8f6d55ff4599437b83b5b81ff41acb35f2ad7a19
-vendor/firmware/a660_zap.mdt|c8c3fbbe780759da5e0637c0a2e4ac74fb147e42
+vendor/firmware/a660_zap.elf|dab2996446da91da33d41eb44559a480adff4377
+vendor/firmware/a660_zap.mdt|91bd173a41b8099af5616fbbc1d7ea720bc16b77
 
 # Audio - RUI
 odm/etc/acdbdata/Bluetooth_cal.acdb|fb6e43309bc6d860ee4be7d23c9e51d423ce7ee1
@@ -373,7 +373,7 @@ vendor/lib64/vendor.qti.hardware.cvp@1.0.so|84f3f028a772cbc811db0157a6334d5056d9
 
 # CVP - RUI
 vendor/firmware/evass.b00|2595bce1132e8f9bf1832d6aea7c067561095481
-vendor/firmware/evass.b01|3cf142d7c74fb51a81b123fcc0ba541b371cd5fc
+vendor/firmware/evass.b01|af84ff57fc09f3eb4747c137e91eaa930422ca12
 vendor/firmware/evass.b02|a7966bf9596be7ab4e9b99156695aeaa34d4ef0a
 vendor/firmware/evass.b03|3783589ec15b7d583e2f845a4b0b86d0826b2fb1
 vendor/firmware/evass.b04|86a5ed4d22759036806d9321f8e509628f64c5b6
@@ -392,8 +392,8 @@ vendor/firmware/evass.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/evass.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/evass.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/evass.b19|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
-vendor/firmware/evass.mbn|6859f7b4fb644e9d0c52e9d5cdb95b39d2788d8d
-vendor/firmware/evass.mdt|62435590a621e5bb653821bc6b9abbafcbc5093a
+vendor/firmware/evass.mbn|7ff0663dd2af9b23dde6b6df68a19530c1b58e06
+vendor/firmware/evass.mdt|16f8b92d765941b11ac8fa53370220053213559a
 
 # Camera - RUI
 odm/etc/camera/CameraHWConfiguration.config|1645a4bd23fda8bbdc13dd0ab99a31c2f240b814
@@ -571,7 +571,7 @@ vendor/lib64/camera/arcsoft_dc_calibration_t.bin|09a9a7db650686653b21529ecbd0a65
 vendor/lib64/camera/arcsoft_dc_calibration_u.bin|1c28e8d987dc4699101fdc372f5f94453c43efb6
 vendor/lib64/camera/arcsoft_dc_calibration_w.bin|eadef5ead401e60ee10b7490521eae582044c69a
 vendor/lib64/camera/components/com.arcsoft.node.eisv2.so|c1390341aa7e9cf0998041a0fdfe6e61c7023f9f
-vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so|8affc259b7ee59e93173c345c87bbf12a469e143
+vendor/lib64/camera/components/com.arcsoft.node.smooth_transition.so|f8b906f69ae87d0cb5246fadc2f6940121bcdc1f
 vendor/lib64/camera/components/com.qti.camx.chiiqutils.so|416ef70263efc1fefb6255817e657febd7ec5d76
 vendor/lib64/camera/components/com.qti.eisv2.so|78763ad11409053e929045aa20138cd39a4ecf5a
 vendor/lib64/camera/components/com.qti.eisv3.so|ecc874a9f246f35cefc814f369a48a5defa72165
@@ -661,8 +661,8 @@ vendor/lib64/com.qualcomm.mcx.distortionmapper.so|308cc3f09a564f4d6560e09af29c52
 vendor/lib64/com.qualcomm.mcx.linearmapper.so|2e3b3292096402464fbc569b99216cd0cd6a5c8a
 vendor/lib64/com.qualcomm.mcx.policy.mfl.so|97b5f1107f7948eb67baf822f48081a6600edcdd
 vendor/lib64/com.qualcomm.qti.mcx.usecase.extension.so|84722f377374fd11e90e069d6636622f435b3f01
-vendor/lib64/hw/camera.qcom.so|2afce6a3673ebc5786b40936be1050706ced7468
-vendor/lib64/hw/com.qti.chi.override.so|9ee7401a4ad7444f30c6353a288806a831842486
+vendor/lib64/hw/camera.qcom.so|c9520c8858e9309c8949854a377cb5b98ee50701
+vendor/lib64/hw/com.qti.chi.override.so|4b4c2c68d54dddb94cb455f4bdd20ecde95435c9
 vendor/lib64/libFace3DTA.so|d4355f83fa06d60eca909fbdab4def6da2d588d3
 vendor/lib64/libFace3D_hlos.so|d7fe207a8c63188fc6e36865aa59cc0962dcaae0
 vendor/lib64/libQ6MSFR_manager_stub.so|7dbe3c795c82a9ab24607f7536b95b839b9b0700
@@ -785,19 +785,19 @@ vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|068425f06983f818fca992fe3
 
 # Data - RUI
 vendor/firmware/ipa_fws.b00|1365a355064949539679b3e4308d50d0de508311
-vendor/firmware/ipa_fws.b01|876b75aeb668eed21009560b0f9bc288b9bd2aac
+vendor/firmware/ipa_fws.b01|bd033ce75318872d2417c209471fa1d7c0e0d46c
 vendor/firmware/ipa_fws.b02|de771411df81d0c4183a698746351ee0943f5901
 vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/ipa_fws.elf|2aba0499a45af6156352a527d0b6fd8ff84838a1
-vendor/firmware/ipa_fws.mdt|2a6cb4783c6f7e6c21d93774805c19ff1079f4b0
+vendor/firmware/ipa_fws.elf|81290ccb78e6c34dbf2d0cc3d28c5a50f7d04840
+vendor/firmware/ipa_fws.mdt|a49609a0c00fd3988ce3b90b5b19bc5df451d9be
 vendor/firmware/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
-vendor/firmware/yupik_ipa_fws.b01|ea3387e1b984566d97b1d5c1816b00b0b5ed684e
+vendor/firmware/yupik_ipa_fws.b01|d1766bd85a9db1ac22520a5fce27f1a6153d6df8
 vendor/firmware/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f
 vendor/firmware/yupik_ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
 vendor/firmware/yupik_ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/yupik_ipa_fws.elf|25e1297b5fcb61193c71ea0ceac3fd16da3bcfa9
-vendor/firmware/yupik_ipa_fws.mdt|5fa83a5e1ec238070356a6c6da649112b4383c8a
+vendor/firmware/yupik_ipa_fws.elf|f772dcf586a5d1feee5893ee92f3fb48a90f3660
+vendor/firmware/yupik_ipa_fws.mdt|f97c6dc8ebd3b0b1377ab99e425e5b6caf8a75c3
 
 # Diag - BSP
 vendor/bin/diag-router|07a9e4f0c8fd76a1c9a2f1d7438adf69c6ce8c14
@@ -875,7 +875,7 @@ vendor/lib64/libfastcvdsp_stub.so|e96f694ccc539aedbfcd11abeab272e22a0d78d7
 -vendor/lib64/libfastcvopt.so|400ef91945d2e87004d7729be19fbaf538e181e1
 
 # Fingerprint - RUI
-odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|3d31c8c4d1cc166c978df66ce31701e6b0e1859a
+odm/bin/hw/vendor.oplus.hardware.biometrics.fingerprint@2.1-service|50db028f82988185c77251df30c3f1b782f04bc0
 odm/bin/init.oplus.fingerprints.sh|950befd6f64d4055bf47ab066a0a1e0080e6191e
 odm/etc/init/vendor.oplus.hardware.biometrics.fingerprint@2.1-service.rc|5eead2eabcc060ce5d400a779f1e8482732b7012
 odm/etc/vintf/manifest/manifest_oplus_fingerprint.xml|78ca4f56ed1f5dd48c186718718fd9513629851e
@@ -1474,7 +1474,7 @@ vendor/lib64/libvpptestutils.so|29e2f3eae53a06160e93bc833b3264aa995dc974
 vendor/lib64/vendor.qti.hardware.vpp@2.0.so|93e0a5496b85de9d77d3b5a26e4d15e3c4fd696b
 
 # VPU - RUI
-vendor/firmware/vpu20_1v.b01|559b632027f4d52b0a9afd2c51618a2b1597d36d
+vendor/firmware/vpu20_1v.b01|b82e57cb5dad8f2b7e637fe0694201dcf1cb9770
 vendor/firmware/vpu20_1v.b02|3ccc1d300b68af61bc44f7672cde056ffad57b43
 vendor/firmware/vpu20_1v.b03|7772b18b16e520641e8051fd6284384e9b0e1939
 vendor/firmware/vpu20_1v.b04|e13090c472b5da4a00a879463f15b07bab06b7f2
@@ -1493,8 +1493,8 @@ vendor/firmware/vpu20_1v.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/vpu20_1v.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/vpu20_1v.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
 vendor/firmware/vpu20_1v.b19|c1756e0567d10a1173f481cd367ff4637b2dd77f
-vendor/firmware/vpu20_1v.mbn|ad5b75fcece82bd4f60a61ce8395ad53a82791ce
-vendor/firmware/vpu20_1v.mdt|370aa0dc779da684379163f2bf60f61062ac0100
+vendor/firmware/vpu20_1v.mbn|31e964f5bcc5021a0336630b20be309d0d06b14e
+vendor/firmware/vpu20_1v.mdt|f267494e79a3216c4dd6530979a8d90427ff8331
 vendor/firmware/vpu20_1v_unsigned.mbn|3d9754f4e6f1157927ba61f6b19adb83befaecf1
 vendor/firmware/vpu20_4v.b01|3449c1d8db13cbdabb064992ca0eff0e930be035
 vendor/firmware/vpu20_4v.b02|2756850def9b5d077cc285ace8feed8896a6526e

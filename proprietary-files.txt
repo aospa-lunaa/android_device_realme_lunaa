@@ -1452,13 +1452,10 @@ vendor/bin/time_daemon|4c2a0ff6d2322c9fda64321b12bba62aa30bc385
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|2ed540a100dae631070b6e06c01c56c0cfce6484
 
-# Touch - from RMX3360_11_C.13
+# Touch
 odm/firmware/tp/21603/FW_FT3518_SAMSUNG.img|d966a81395d0698ebb5dfbceb9ed4dbc0c3a2ca4
 odm/firmware/tp/21603/FW_FT3518_SAMSUNG_FAE.img|eff70c80e77eaa99a76caa5e9a9dcde5a7ae5b7d
 odm/firmware/tp/21603/LIMIT_FT3518_SAMSUNG.img|7a6b6d58bd37435d2dc68459ffc65dd2b4c523b4
-odm/firmware/tp/21643/FW_NF_ILI7807S_DSJM.img|599998dcd3b7ca3eb1874984ccc55eb3cd4d434c
-odm/firmware/tp/21643/FW_NF_ILI7807S_DSJM_FAE.img|01b7f67bd2db6c5e935c3d7ab760355e198f5209
-odm/firmware/tp/21643/LIMIT_NF_ILI7807S_DSJM.img|528596f7b8181ba790b9b4620993d451373c4bcb
 
 # VPP - BSP
 vendor/bin/vppservice|500b2cb1ee4144efbb24406665217b72937342fa

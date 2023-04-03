@@ -759,7 +759,6 @@ vendor/bin/shsusrd|4cf1b4017c481cb6b7e0a44f6fb20fe5e94bd47c
 vendor/etc/data/dsi_config.xml|85f76668d6b6f87402c534f284c286676edefa93
 vendor/etc/data/netmgr_config.xml|f5d263abc394c1a770d7464b86c5b0c590523c9b
 vendor/etc/init/init.embmssl_server.rc|e2f59e5d6223112bdcfbf9e9e69fe6abea3698b1
-vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
 vendor/etc/init/ipacm-diag.rc|e3cee56d2e3ca6bf9aafb827827ebea369fc2897
 vendor/etc/init/netmgrd.rc|5c592bd2cf775462e147d3def97e99abbac4631e
 vendor/etc/init/port-bridge.rc|e52d61a0de5e8a3b21bfbfca929e862422645377
@@ -784,13 +783,6 @@ vendor/lib64/vendor.qti.hardware.embmssl@1.1.so|4bc34a586b1e408b3343e4301014f08a
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so|068425f06983f818fca992fe35e586ba0054ba08
 
 # Data - RUI
-vendor/firmware/ipa_fws.b00|1365a355064949539679b3e4308d50d0de508311
-vendor/firmware/ipa_fws.b01|bd033ce75318872d2417c209471fa1d7c0e0d46c
-vendor/firmware/ipa_fws.b02|de771411df81d0c4183a698746351ee0943f5901
-vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa_fws.b04|7aa0ec649f20af523f21c6e19014987f86f18dff
-vendor/firmware/ipa_fws.elf|81290ccb78e6c34dbf2d0cc3d28c5a50f7d04840
-vendor/firmware/ipa_fws.mdt|a49609a0c00fd3988ce3b90b5b19bc5df451d9be
 vendor/firmware/yupik_ipa_fws.b00|a43669e4c8ad4af399b829c7986651bef2fd058a
 vendor/firmware/yupik_ipa_fws.b01|d1766bd85a9db1ac22520a5fce27f1a6153d6df8
 vendor/firmware/yupik_ipa_fws.b02|c0f5259e45f67f322459e7afde30cba608b9ea5f

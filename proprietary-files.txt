@@ -1,5 +1,6 @@
 ## Sections labeled with 'BSP' are from LA.UM.9.14.r1-20200-LAHAINA.QSSI13.0.
-## Sections labeled with 'RUI' are from RMX3360_11.F.04.
+## Sections labeled with 'RUI' are from the latest stable Realme UI4 build
+## which is RMX3363_11.F.06.
 
 # ADSPRPC - BSP
 vendor/bin/adsprpcd|e97a90171313051e2994d1a3d0985de59f586788

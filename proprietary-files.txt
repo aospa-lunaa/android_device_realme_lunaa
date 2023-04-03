@@ -371,30 +371,6 @@ vendor/lib64/libcvp_util.so|e1f643a0ba42024eb0db686ec0f248c64f20c212
 vendor/lib64/libcvpcpuRev_skel.so|d7bd0873a5087b56a9d7324219a906b3c3edf795
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so|84f3f028a772cbc811db0157a6334d5056d95d04
 
-# CVP - RUI
-vendor/firmware/evass.b00|2595bce1132e8f9bf1832d6aea7c067561095481
-vendor/firmware/evass.b01|af84ff57fc09f3eb4747c137e91eaa930422ca12
-vendor/firmware/evass.b02|a7966bf9596be7ab4e9b99156695aeaa34d4ef0a
-vendor/firmware/evass.b03|3783589ec15b7d583e2f845a4b0b86d0826b2fb1
-vendor/firmware/evass.b04|86a5ed4d22759036806d9321f8e509628f64c5b6
-vendor/firmware/evass.b05|9878c2584b5147b94c9bc466c95677a6dbc023db
-vendor/firmware/evass.b06|e19854e03b52cc67d7db620f54609b66d1b85f54
-vendor/firmware/evass.b07|0b403b94f400e8f76ac5f5f18f6957318ec2a582
-vendor/firmware/evass.b08|86a5ed4d22759036806d9321f8e509628f64c5b6
-vendor/firmware/evass.b09|8bda099219fa74368be45c505cf722c09f420952
-vendor/firmware/evass.b10|2d33a5275570202d46ffe6787a1e6b9ebae8458a
-vendor/firmware/evass.b11|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b12|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b13|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b14|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b15|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b16|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b17|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b18|da39a3ee5e6b4b0d3255bfef95601890afd80709
-vendor/firmware/evass.b19|1ceaf73df40e531df3bfb26b4fb7cd95fb7bff1d
-vendor/firmware/evass.mbn|7ff0663dd2af9b23dde6b6df68a19530c1b58e06
-vendor/firmware/evass.mdt|16f8b92d765941b11ac8fa53370220053213559a
-
 # Camera - RUI
 odm/etc/camera/CameraHWConfiguration.config|1645a4bd23fda8bbdc13dd0ab99a31c2f240b814
 odm/etc/camera/anc_cl_kernel.cache|2d3e928463969c61c106a843798a7da9377b8e9c

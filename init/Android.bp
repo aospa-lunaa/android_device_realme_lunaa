@@ -80,9 +80,3 @@ prebuilt_etc {
     src: "ueventd.oplus.rc",
     device_specific: true,
 }
-
-sh_binary {
-    name: "init.oplus.sensors_fix.sh",
-    src: "init.oplus.sensors_fix.sh",
-    vendor: true,
-}

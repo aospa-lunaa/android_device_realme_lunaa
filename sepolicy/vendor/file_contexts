@@ -15,9 +15,6 @@
 /dev/jiiov_fp                                                                                    u:object_r:fingerprint_device:s0
 /mnt/vendor/persist/fingerprint(/.*)?                                                            u:object_r:vendor_persist_fingerprint_file:s0
 
-# Init
-/(vendor|system/vendor)/bin/init\.oplus.sensors_fix\.sh                                               u:object_r:vendor_init-qcom-sensors-sh_exec:s0
-
 # NFC
 /(vendor|system/vendor)/bin/hw/android\.hardware\.nfc-service\.st           u:object_r:hal_nfc_default_exec:s0
 /dev/st21nfc                                                                u:object_r:nfc_device:s0

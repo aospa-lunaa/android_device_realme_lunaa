@@ -187,9 +187,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.oplus.rc
 
-PRODUCT_PACKAGES += \
-    init.oplus.sensors_fix.sh
-
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \
     ro.crypto.dm_default_key.options_format.version=2 \

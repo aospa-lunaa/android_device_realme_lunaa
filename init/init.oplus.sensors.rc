@@ -16,17 +16,8 @@ on boot
     # Sensors
     chown system system /sys/devices/platform/soc/soc:sensor_fb/adsp_notify
 
-    # Apply sensors fix
-    start init-oplus-sensors_fix-sh
-
 service oplus_sensor_fb /odm/bin/oplus_sensor_fb
     user system
     group system
     class late_start
-    oneshot
-
-service init-oplus-sensors_fix-sh /vendor/bin/init.oplus.sensors_fix.sh
-    class main
-    user system
-    group system
     oneshot

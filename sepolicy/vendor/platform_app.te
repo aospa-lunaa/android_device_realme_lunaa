@@ -1,0 +1,2 @@
+allow platform_app vendor_xdsp_device:chr_file r_file_perms;
+r_dir_file(platform_app, vendor_persist_camera_file)

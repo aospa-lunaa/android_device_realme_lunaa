@@ -57,6 +57,16 @@
             <instance>clearkey</instance>
         </interface>
     </hal>
+    <!--Sensor-->
+    <hal format="hidl" optional="true">
+        <name>vendor.oplus.hardware.oplusSensor</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>ISensorFeature</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!--Vibrator-->
     <hal format="aidl" optional="true">
         <name>android.hardware.vibrator</name>

@@ -1421,7 +1421,7 @@ vendor/bin/time_daemon|4c2a0ff6d2322c9fda64321b12bba62aa30bc385
 vendor/etc/init/init.time_daemon.rc|b253ca2a498757e14e1d7a051bf504ae09218f51
 vendor/lib64/libtime_genoff.so|2ed540a100dae631070b6e06c01c56c0cfce6484
 
-# Touch
+# Touch - RUI
 odm/firmware/tp/21603/FW_FT3518_SAMSUNG.img|d966a81395d0698ebb5dfbceb9ed4dbc0c3a2ca4
 odm/firmware/tp/21603/FW_FT3518_SAMSUNG_FAE.img|eff70c80e77eaa99a76caa5e9a9dcde5a7ae5b7d
 odm/firmware/tp/21603/LIMIT_FT3518_SAMSUNG.img|7a6b6d58bd37435d2dc68459ffc65dd2b4c523b4

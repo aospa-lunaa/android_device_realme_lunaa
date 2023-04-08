@@ -1141,6 +1141,7 @@ vendor/lib64/libtriplecam_optical_zoom_control.so|05a97af09b85d314d9715fe9f285e1
 vendor/lib64/libtriplecam_video_optical_zoom.so|862089c80ad3713643f6542e6c18ca7d0985b4fd
 vendor/lib64/vendor.oplus.hardware.cammidasservice@1.0.so|bf9174821ff9c980b80898057f7025f82fd32477
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|ea712058a292ebd38fc10e2ed7c569259861be6a
+product/lib64/libsingle_camera_bokeh_native.so:my_product/lib64/libsingle_camera_bokeh_native.so
 
 # Camera firmware - RUI
 vendor/firmware/CAMERA_ICP_170.elf|8183245e0b0b80e5c65fe6c84e9b6b72f5a44d54

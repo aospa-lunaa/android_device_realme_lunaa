@@ -300,7 +300,6 @@ TARGET_COMMON_QTI_COMPONENTS := \
     perf \
     telephony \
     usb \
-    vibrator \
     wfd \
     wlan
 

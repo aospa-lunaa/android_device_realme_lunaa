@@ -75,6 +75,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_ODM_PROPERTIES += \
     persist.vendor.fp.template_updateflag=V1
 
+# Biometrics - ZPOS
+TARGET_USES_FOD_ZPOS := true
+
 # Bluetooth
 PRODUCT_VENDOR_PROPERTIES += \
     persist.sys.fflag.override.settings_bluetooth_hearing_aid=true \

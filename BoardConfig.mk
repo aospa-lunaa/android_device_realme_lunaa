@@ -81,6 +81,7 @@ TARGET_2ND_CPU_VARIANT := cortex-a76
 
 # Biometrics
 TARGET_SURFACEFLINGER_UDFPS_LIB := //hardware/oplus:libudfps_extension.oplus
+SOONG_CONFIG_qtidisplay_udfps := true
 
 # Board configuration
 TARGET_BOARD_PLATFORM := lahaina

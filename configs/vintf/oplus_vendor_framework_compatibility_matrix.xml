@@ -13,6 +13,24 @@
      limitations under the License.
 -->
 <compatibility-matrix version="1.0" type="framework">
+    <!-- Audio -->
+    <hal format="hidl" optional="true">
+        <name>android.hardware.bluetooth.audio</name>
+        <version>2.0-1</version>
+        <interface>
+            <name>IBluetoothAudioProvidersFactory</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Boot -->
+    <hal format="hidl" optional="true">
+        <name>android.hardware.boot</name>
+        <version>1.0-2</version>
+        <interface>
+            <name>IBootControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
     <!-- Camera -->
     <hal format="hidl" optional="true">
         <name>vendor.qti.hardware.camera.cameraextension</name>
@@ -31,6 +49,14 @@
             <instance>cameraextensionservice</instance>
         </interface>
     </hal>
+    <!-- DRM -->
+    <hal format="aidl" optional="true">
+        <name>android.hardware.drm</name>
+        <interface>
+            <name>IDrmFactory</name>
+            <instance>clearkey</instance>
+        </interface>
+    </hal>
     <!-- Fingerprint -->
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.biometrics.fingerprint</name>
@@ -40,24 +66,31 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!--Audio-->
-    <hal format="hidl" optional="true">
-        <name>android.hardware.bluetooth.audio</name>
-        <version>2.0-1</version>
+    <!-- Light -->
+    <hal format="aidl" optional="true">
+        <name>android.hardware.light</name>
         <interface>
-            <name>IBluetoothAudioProvidersFactory</name>
+            <name>ILights</name>
             <instance>default</instance>
         </interface>
     </hal>
-    <!--DRM-->
+    <!-- NFC -->
     <hal format="aidl" optional="true">
-        <name>android.hardware.drm</name>
+        <name>android.hardware.nfc</name>
         <interface>
-            <name>IDrmFactory</name>
-            <instance>clearkey</instance>
+            <name>INfc</name>
+            <instance>default</instance>
         </interface>
     </hal>
-    <!--Sensor-->
+    <!-- Power -->
+    <hal format="aidl" optional="true">
+        <name>android.hardware.power</name>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <!-- Sensor -->
     <hal format="hidl" optional="true">
         <name>vendor.oplus.hardware.oplusSensor</name>
         <transport>hwbinder</transport>
@@ -67,7 +100,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!--Vibrator-->
+    <!-- Vibrator -->
     <hal format="aidl" optional="true">
         <name>android.hardware.vibrator</name>
         <interface>
@@ -75,7 +108,7 @@
             <instance>default</instance>
         </interface>
     </hal>
-    <!--WiFi-->
+    <!-- WiFi -->
     <hal format="aidl" optional="true">
         <name>android.hardware.wifi.hostapd</name>
         <interface>

@@ -1789,14 +1789,16 @@ vendor/bin/tloc_daemon|a93e8ba58976900ce123a86cdf466c6655cfa27b
 vendor/etc/init/tloc_daemon.rc|9dd38e92847bc34f8a3228f4cd81ef14b6e89785
 
 # Thermal - BSP
-vendor/bin/hw/vendor.qti.hardware.limits@1.0-service
-vendor/bin/thermal-engine
-vendor/etc/init/init_thermal-engine.rc
-vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc
-vendor/lib64/vendor.qti.hardware.limits@1.0.so
--vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml
--vendor/lib/libthermalclient.so
--vendor/lib64/libthermalclient.so
+vendor/bin/hw/vendor.qti.hardware.limits@1.0-service|8d06519ea41f7ee97ccd852def1c1617fb982944
+vendor/etc/init/vendor.qti.hardware.limits@1.0-service.rc|77c989d8d59b99716b900e96d94a4aa9bcab6aa6
+-vendor/etc/vintf/manifest/vendor.qti.hardware.limits@1.0-service.xml|6109f13748cb74b7d042e2604a9883a1b071e810
+vendor/lib64/vendor.qti.hardware.limits@1.0.so|c33c90b6431e384168075634dd9d37048eca6ede
+
+# Thermal Engine - RUI
+vendor/bin/thermal-engine|6a9f0faf353a29203b42790f8fc7bc44b5f366f8
+vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
+-vendor/lib/libthermalclient.so|6ed686c6c39546a7bf532767f6d87808a42b1176
+-vendor/lib64/libthermalclient.so|06ce477c2c01b916b9f3c0b934dd377ff8fc9f8f
 
 # Time Services - BSP
 -vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923

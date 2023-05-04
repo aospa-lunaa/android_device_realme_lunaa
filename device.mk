@@ -199,6 +199,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/displayconfig/display_id_4630946741972277890.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946741972277890.xml
 
+# MGLRU (Multi-gen LRU)
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.device_config.mglru_native.lru_gen_config=core
+
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 TARGET_USES_ST_AIDL_NFC := true

@@ -422,8 +422,7 @@
     <bool name="config_displayWhiteBalanceAvailable">false</bool>
 
     <!-- Screen brightness when dozing. -->
-    <integer name="config_screenBrightnessDoze">30</integer>
-    <item name="config_screenBrightnessDozeFloat" format="float" type="dimen">0.1</item>
+    <integer name="config_screenBrightnessDoze">6</integer>
 
     <!-- List of biometric sensors on the device, in decreasing strength. Consumed by AuthService
          when registering authenticators with BiometricService. Format must be ID:Modality:Strength,

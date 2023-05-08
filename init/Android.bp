@@ -80,3 +80,9 @@ prebuilt_etc {
     src: "ueventd.oplus.rc",
     device_specific: true,
 }
+
+sh_binary {
+    name: "init.oplus.post_boot.sh",
+    src: "init.oplus.post_boot.sh",
+    vendor: true,
+}

@@ -1,4 +1,4 @@
-# Copyright (C) 2023 Paranoid Android
+# Copyright (C) 2022 Paranoid Android
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -12,59 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+service oplus-post-boot /vendor/bin/sh /vendor/bin/init.oplus.post_boot.sh
+    class core
+    user root
+    group root system wakelock graphics
+    disabled
+    oneshot
+
 on early-boot
     # Disable serial console notification
     stop console
 
-on init
-    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
-
-# Migrate tasks again in case kernel threads are created during boot
 on property:sys.boot_completed=1
-    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
+    start oplus-post-boot
 
 on property:vendor.post_boot.parsed=1
-    # Background CPU parameter
-    write /dev/cpuset/background/cpus 0-1
-
-    # Configure schedutil ratelimits
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu0/cpufreq/schedutil/down_rate_limit_us 20000
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu4/cpufreq/schedutil/down_rate_limit_us 10000
-    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/up_rate_limit_us 500
-    write /sys/devices/system/cpu/cpu7/cpufreq/schedutil/down_rate_limit_us 5000
-
-    # Configure CPU input boost
-    write /sys/devices/system/cpu/cpu_boost/input_boost_freq "0:1324800"
-    write /sys/devices/system/cpu/cpu_boost/input_boost_ms 150
-
-    # Configure uclamp
-    write /dev/cpuctl/top-app/cpu.uclamp.latency_sensitive 1
-    write /dev/cpuctl/background/cpu.uclamp.max 50
-    write /dev/cpuctl/system-background/cpu.uclamp.max 50
-    write /dev/cpuctl/dex2oat/cpu.uclamp.max 60
-    # Setup cpu.shares to throttle background groups (bg ~ 5% sysbg ~ 5% dex2oat ~2.5%)
-    write /dev/cpuctl/background/cpu.shares 1024
-    write /dev/cpuctl/system-background/cpu.shares 1024
-    write /dev/cpuctl/dex2oat/cpu.shares 512
-    write /dev/cpuctl/system/cpu.shares 20480
-    # We only have system and background groups holding tasks and the groups below are empty
-    write /dev/cpuctl/camera-daemon/cpu.shares 20480
-    write /dev/cpuctl/foreground/cpu.shares 20480
-    write /dev/cpuctl/nnapi-hal/cpu.shares 20480
-    write /dev/cpuctl/rt/cpu.shares 20480
-    write /dev/cpuctl/top-app/cpu.shares 20480
-
-    # IRQ Tuning
-    # IRQ 243: msm_drm0
-    # IRQ 222: kgsl_3d0_irq
-    write /proc/irq/243/smp_affinity_list 2
-    write /proc/irq/240/smp_affinity_list 1
-
-    # Suspend to RAM
-    write /sys/power/mem_sleep deep
-
-    # Thread count after setup wizard
-    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
-    setprop dalvik.vm.dex2oat-threads 6
+# IRQ Tuning
+# IRQ 243: msm_drm0
+# IRQ 222: kgsl_3d0_irq
+write /proc/irq/243/smp_affinity_list 2
+write /proc/irq/240/smp_affinity_list 1

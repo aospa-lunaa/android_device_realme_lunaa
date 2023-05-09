@@ -206,10 +206,6 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
    android.hardware.keymaster@4.1.vendor
 
-# Display Config
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/displayconfig/display_id_4630946741972277890.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946741972277890.xml
-
 # MGLRU (Multi-gen LRU)
 PRODUCT_VENDOR_PROPERTIES += \
     persist.device_config.mglru_native.lru_gen_config=core

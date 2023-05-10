@@ -12,8 +12,8 @@ cc_library_shared {
         "libcutils",
         "libutils",
         "liblog",
-        "libqtivibratoreffect",
         "libbinder_ndk",
+	"liboplusvibratoreffect",
         "android.hardware.vibrator-V2-ndk",
     ],
     export_include_dirs: ["include"]

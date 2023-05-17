@@ -344,6 +344,10 @@ PRODUCT_PACKAGES += \
     android.hardware.sensors@2.1-service.lunaa \
     als_correction_service.lunaa
 
+PRODUCT_PACKAGES += \
+    android.frameworks.sensorservice@1.0.vendor \
+    android.frameworks.sensorservice@1.0
+    
 PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.sensors.allow_non_default_discovery=true \
     persist.vendor.sensors.on_change_sample_period=true \

@@ -1443,12 +1443,6 @@ vendor/etc/init/init.qti.qcv.rc|1d0cff5660bdf7abc22ac2b960a0dcd88404d740
 vendor/lib64/libsoc_helper.so|1a76b2e9151c6bf3a0576999b4ca9fa2e65da6ed
 vendor/lib64/libsoc_helper_jni.so|e58ddb6b27e4d7fd215adbbd05165f1dccdd0f05
 
-# QDMA - BSP
--vendor/app/QCC-TR-UI/QCC-TR-UI.apk|f94993de5108241dcba50edff4d1c00c356d6c4a
-vendor/bin/qcc-trd|8d2798a76061127aaa07e271385faa268edc6ad8
-vendor/etc/init/init.qdmastats.rc|837b16bf9600715345fc65d5d6c98ce97f2d4583
-vendor/lib64/libqdma_file_agent.so|9c5006ba3f31cdb86948cbef988eb5fbc35bb285
-
 # QMI - BSP
 vendor/bin/irsc_util|e1aa7d3a01291caa9339ee1622787e7c16ee306f
 vendor/bin/qdss_qmi_helper|44fdc667bfc6011190dab4d4eef2acdc37f10371

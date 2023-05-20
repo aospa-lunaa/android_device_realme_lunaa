@@ -1804,6 +1804,7 @@ vendor/bin/thermal-engine|6a9f0faf353a29203b42790f8fc7bc44b5f366f8
 vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
 -vendor/lib/libthermalclient.so|6ed686c6c39546a7bf532767f6d87808a42b1176
 -vendor/lib64/libthermalclient.so|06ce477c2c01b916b9f3c0b934dd377ff8fc9f8f
+vendor/etc/thermal-engine.conf
 
 # Time Services - BSP
 -vendor/app/TimeService/TimeService.apk|92317b3b72586489456d37057b4c3c8e55863923

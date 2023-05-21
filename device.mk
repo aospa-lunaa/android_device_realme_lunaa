@@ -189,7 +189,6 @@ PRODUCT_PACKAGES += \
     fstab.default \
     init.oplus.camera.rc \
     init.oplus.display.rc \
-    init.oplus.perf.rc \
     init.oplus.sensors.rc \
     init.oplus.telephony.rc \
     init.oplus.wlan.rc \
@@ -197,11 +196,7 @@ PRODUCT_PACKAGES += \
     init.oplus.charger.rc \
     init.oplus.nfc.rc \
     init.target.rc \
-    ueventd.oplus.rc \
-    init.oplus.post_boot.sh
-
-PRODUCT_VENDOR_PROPERTIES += \
-    vendor.post_boot.custom=true
+    ueventd.oplus.rc
 
 # Keymaster
 PRODUCT_VENDOR_PROPERTIES += \

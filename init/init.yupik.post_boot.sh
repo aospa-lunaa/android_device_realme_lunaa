@@ -33,3 +33,8 @@ echo 65 85 > /proc/sys/kernel/sched_upmigrate
 echo 60 75 > /proc/sys/kernel/sched_downmigrate
 echo 95 > /proc/sys/kernel/sched_group_upmigrate
 echo 75 > /proc/sys/kernel/sched_group_downmigrate
+
+# Runtime cpusets
+echo 0-7 > /dev/cpuset/top-app/cpus
+echo 0-1 > /dev/cpuset/background/cpus
+echo 0-3 > /dev/cpuset/system-background/cpus

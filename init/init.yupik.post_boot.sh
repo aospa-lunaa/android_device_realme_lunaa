@@ -65,3 +65,6 @@ if [ "$device_provisioned" == "1" ]; then
     setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
     setprop dalvik.vm.dex2oat-threads 6
 fi
+
+# Enable suspend to RAM
+echo deep > /sys/power/mem_sleep

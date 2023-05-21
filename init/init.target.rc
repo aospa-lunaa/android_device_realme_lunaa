@@ -35,6 +35,8 @@ on early-init
     wait /sys/devices/soc0/soc_id
 
 on init
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
+
     # Scheduler uclamp
     mkdir /dev/cpuctl/foreground
     mkdir /dev/cpuctl/background
@@ -152,6 +154,10 @@ on init && property:ro.boot.mode=charger
     mount_all /vendor/etc/charger_fw_fstab.qti --early
     write /sys/kernel/boot_adsp/boot 1
     wait /sys/class/power_supply/battery
+
+on property:sys.boot_completed=1
+    # Migrate tasks again in case kernel threads are created during boot
+    copy_per_line /dev/cpuctl/tasks /dev/cpuctl/system/tasks
 
 on charger
     start vendor.power_off_alarm

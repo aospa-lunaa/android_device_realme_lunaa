@@ -27,3 +27,9 @@ echo 10000 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/down_rate_limit_u
 echo 500 > /sys/devices/system/cpu/cpufreq/policy4/schedutil/up_rate_limit_us
 echo 5000 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/down_rate_limit_us
 echo 500 > /sys/devices/system/cpu/cpufreq/policy7/schedutil/up_rate_limit_us
+
+# Scheduler configuration
+echo 65 85 > /proc/sys/kernel/sched_upmigrate
+echo 60 75 > /proc/sys/kernel/sched_downmigrate
+echo 95 > /proc/sys/kernel/sched_group_upmigrate
+echo 75 > /proc/sys/kernel/sched_group_downmigrate

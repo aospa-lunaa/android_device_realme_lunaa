@@ -68,3 +68,7 @@ fi
 
 # Enable suspend to RAM
 echo deep > /sys/power/mem_sleep
+
+# CPU Input boost
+echo "0:1324800" > /sys/devices/system/cpu/cpu_boost/input_boost_freq
+echo 150 > /sys/devices/system/cpu/cpu_boost/input_boost_ms

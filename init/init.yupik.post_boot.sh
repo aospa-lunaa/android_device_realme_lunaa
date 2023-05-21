@@ -57,3 +57,11 @@ echo 20480 > /dev/cpuctl/foreground/cpu.shares
 echo 20480 > /dev/cpuctl/nnapi-hal/cpu.shares
 echo 20480 > /dev/cpuctl/rt/cpu.shares
 echo 20480 > /dev/cpuctl/top-app/cpu.shares
+
+# Thread count after setup wizard
+device_provisioned=`getprop persist.sys.device_provisioned`
+
+if [ "$device_provisioned" == "1" ]; then
+    setprop dalvik.vm.dex2oat-cpu-set 0,1,2,3,4,5,6
+    setprop dalvik.vm.dex2oat-threads 6
+fi

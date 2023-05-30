@@ -145,7 +145,7 @@ BOARD_KERNEL_CMDLINE := \
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
-KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
+KERNEL_DEFCONFIG := vendor/yupik-qgki_defconfig
 
 # Kernel - use GCC
 KERNEL_NEW_GCC_SUPPORT := true

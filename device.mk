@@ -385,7 +385,7 @@ $(call inherit-product, vendor/realme/lunaa/lunaa-vendor.mk)
 
 # Vibrator
 PRODUCT_PACKAGES += \
-    vendor.qti.hardware.vibrator.service.oplus
+    vendor.qti.hardware.vibrator.service.lunaa
 
 # VNDK
 PRODUCT_COPY_FILES += \

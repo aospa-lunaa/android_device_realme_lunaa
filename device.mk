@@ -172,11 +172,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_VENDOR_PROPERTIES += \
     vendor.gatekeeper.disable_spu=true
 
-# Health
-PRODUCT_PACKAGES += \
-    android.hardware.health@2.1-impl-qti \
-    android.hardware.health@2.1-service
-
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.memory.block@1.0.vendor

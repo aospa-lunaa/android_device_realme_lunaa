@@ -1581,39 +1581,6 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so|444b879c119a74cd
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so|5bd93b3461b37c9ec7b10ae14b83781eb7556b27
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so|cf9e2e22271a4091ba3c4c636ffc55f0d571ca42
 
-# QTEE - BSP
-vendor/bin/hw/vendor.qti.hardware.qteeconnector@1.0-service|503a4ed0dc8b1af8e07e8a7c7e95e593870f7d41
-vendor/etc/init/vendor.qti.hardware.qteeconnector@1.0-service.rc|c966350ee67d3a7c73ca7184e3725264025d16f5
-vendor/lib64/hw/vendor.qti.hardware.qteeconnector@1.0-impl.so|9aca7460e1185755eeecf1a3b17e7f612e7fde10
-vendor/lib64/libGPQTEEC_vendor.so|1d0204fa71b877ab2b41cff234375144097bc04b
-vendor/lib64/libGPTEE_vendor.so|c4f0ac36e6cda86f979663ec573560b882f9580e
-vendor/lib64/libQTEEConnector_listener.so|8d25d1ac1374673ec2c1c5356f5b04e500d06af4
-vendor/lib64/libQTEEConnector_vendor.so|013f9397847e13ca05bcd01da591f4e3af9f58a9
-vendor/lib64/vendor.qti.hardware.qteeconnector@1.0.so|fd590d9edd85718db6ddf1cfe455f5cc3080eb0f
-
-# QSEECOM - BSP
-vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service|f94e42bc48d59cfdd2b64377211da666197756b1
-vendor/bin/qseecomd|0b8086fa2d1450b51f708162337adad0849f1bc8
-vendor/etc/gpfspath_oem_config.xml|7aeade35b0bbe27530f6aca8c1ed5192a7acf59d
-vendor/etc/init/qseecomd.rc|0ebfb7c5d1d2459be4fdac951a182dc486f3bda7
-vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc|0f43244d70d5efc1e4f089b926a9dc4f59e53db1
-vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so|d39036b1fdd7ba6074d95cb7554e40dec61c8b87
-vendor/lib64/libGPreqcancel.so|e68af95cd66c038dfc760148294d83e66de62dba
-vendor/lib64/libGPreqcancel_svc.so|c6a9bea02c59686bdbdc115d205c3981ab2375ed
-vendor/lib64/libQSEEComAPI.so|10f7f3d7e45b9fdbe92ff95ae0440ecf3e6ce376
-vendor/lib64/libdrmfs.so|43ae9d61844b1c94e31e2c776ad2f852f8512d8d
-vendor/lib64/libdrmtime.so|e27e49249b13f2f7c1f576e951e4021bec97d09c
-vendor/lib64/librpmb.so|5cfa7edb5326f838d64271ff75f81a85769c4851
-vendor/lib64/libssd.so|b35d59631c42ecffe259d6962912eeaa6b08935e
-vendor/lib64/vendor.qti.hardware.qseecom@1.0.so|7852a018c148dbe2ace4d0d938ffb0403924a2f6
-
-# QSPM HAL - BSP
-vendor/bin/vendor.qti.qspmhal@1.0-service|7a9de1a26a3ba7cceca310e0d9f3aa1b39ddf24b
-vendor/etc/init/vendor.qti.qspmhal@1.0-service.rc|bdc5cbedd1688807409c72262824ca9162b20239
-vendor/etc/seccomp_policy/qspm.policy|943dd12bd4ae7cb0037b2e246143d76bb1787257
-vendor/lib64/vendor.qti.qspmhal@1.0-impl.so|171884a6d4751c4307e558c0a3ffccdab3c0c23f
-vendor/lib64/vendor.qti.qspmhal@1.0.so|b24925548b969a7745955bbd48069207aa5889fc
-
 # RemoteFS - RUI
 vendor/bin/rmt_storage|aa034367898920d4e2b74760401d6b7d9e003375
 vendor/etc/init/vendor.qti.rmt_storage.rc|bc212c6353c2ded44ae4d759605fbbe55aa4fa3f

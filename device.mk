@@ -93,6 +93,11 @@ PRODUCT_VENDOR_PROPERTIES += \
     persist.vendor.qcom.bluetooth.twsp_state.enabled=false \
     vendor.hw.fm.init=0
 
+# Blurs
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.sf.blurs_are_expensive=1 \
+    ro.surface_flinger.supports_background_blur=1
+
 # Boot
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl-qti \

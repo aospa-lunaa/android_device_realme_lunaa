@@ -147,8 +147,8 @@ BOARD_KERNEL_PAGESIZE := 4096
 BOARD_RAMDISK_USE_LZ4 := true
 KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 
-# Kernel - use GCC
-KERNEL_NEW_GCC_SUPPORT := true
+# Kernel - use custom LLVM toolchain
+KERNEL_CUSTOM_LLVM := true
 
 # OTA
 TARGET_OTA_ASSERT_DEVICE := RMX3360,RMX3363,RMX3361,lunaa,RE54ABL1

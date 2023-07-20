@@ -159,6 +159,10 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     ro.sf.use_latest_hwc_vsync_period=0
 
+# Display - HBM
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/display/display_id_4630946741972277890.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946741972277890.xml
+
 # FRP
 PRODUCT_VENDOR_PROPERTIES += \
     ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -212,10 +216,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # MGLRU (Multi-gen LRU)
 PRODUCT_VENDOR_PROPERTIES += \
     persist.device_config.mglru_native.lru_gen_config=core
-
-# Display
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/display/display_id_4630946741972277890.xml:$(TARGET_COPY_OUT_VENDOR)/etc/displayconfig/display_id_4630946741972277890.xml
 
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)

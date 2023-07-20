@@ -190,9 +190,7 @@ PRODUCT_PACKAGES += \
     init.oplus.camera.rc \
     init.oplus.display.rc \
     init.oplus.sensors.rc \
-    init.oplus.telephony.rc \
     init.oplus.wlan.rc \
-    init.qti.ufs.rc \
     init.oplus.charger.rc \
     init.oplus.nfc.rc \
     init.target.rc \

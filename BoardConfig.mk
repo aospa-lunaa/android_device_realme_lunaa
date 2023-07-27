@@ -151,6 +151,9 @@ KERNEL_FRAGMENT_CONFIG := vendor/oplus_yupik_QGKI.config
 # Kernel - use custom LLVM toolchain
 KERNEL_CUSTOM_LLVM := true
 
+# Kernel - use full LLVM
+KERNEL_FULL_LLVM := true
+
 # OTA
 TARGET_OTA_ASSERT_DEVICE := RMX3360,RMX3363,RMX3361,lunaa,RE54ABL1
 

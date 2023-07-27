@@ -172,6 +172,12 @@ PRODUCT_VENDOR_PROPERTIES += \
 PRODUCT_PACKAGES += \
     fastbootd
 
+# GPS
+LOC_HIDL_VERSION = 4.0
+
+# GPS - Use regular component version
+TARGET_GPS_COMPONENT_VARIANT := gps
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor

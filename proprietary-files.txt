@@ -1145,6 +1145,9 @@ vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so|ea712058a29
 # Camera firmware - RUI
 vendor/firmware/CAMERA_ICP_170.elf|8183245e0b0b80e5c65fe6c84e9b6b72f5a44d54
 
+# Charging
+vendor/etc/charger_fw_fstab.qti
+
 # Config Store - BSP
 vendor/bin/hw/vendor.qti.hardware.capabilityconfigstore@1.0-service|bb1a4b4b1ee951487b7db48a98e399986e640675
 vendor/etc/init/vendor.qti.hardware.capabilityconfigstore@1.0-service.rc|4ede0250585a44b01d351bbc301d7a13cc3d783d
@@ -1771,7 +1774,7 @@ vendor/lib64/vendor.qti.hardware.limits@1.0.so|c6238628c9240d6b772301fd5c016ee69
 # Thermal Engine - RUI
 vendor/bin/thermal-engine|6a9f0faf353a29203b42790f8fc7bc44b5f366f8
 vendor/etc/init/init_thermal-engine.rc|a0310f09da9f09c67e110607b73aec9f9f981c4c
-vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
 -vendor/lib/libthermalclient.so|6ed686c6c39546a7bf532767f6d87808a42b1176
 -vendor/lib64/libthermalclient.so|06ce477c2c01b916b9f3c0b934dd377ff8fc9f8f
 

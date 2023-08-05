@@ -207,10 +207,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.vendor.lmk.force_inkernel_lmk=true
 
-# MGLRU (Multi-gen LRU)
-PRODUCT_VENDOR_PROPERTIES += \
-    persist.device_config.mglru_native.lru_gen_config=core
-
 # NFC
 $(call inherit-product, hardware/st/nfc/nfc_vendor_product.mk)
 TARGET_USES_ST_AIDL_NFC := true

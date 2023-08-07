@@ -249,13 +249,6 @@ PRODUCT_PACKAGES += \
 # OplusCamera
 $(call inherit-product-if-exists, vendor/oplus/camera/opluscamera.mk)
 
-PRODUCT_SYSTEM_EXT_PROPERTIES += \
-    ro.oplus.system.camera.name=com.oplus.camera \
-    ro.oplus.system.camera.flashlight=com.oplus.motor.flashlight \
-    ro.oplus.camera.video_beauty.prefix=oplus.video.beauty. \
-    ro.oplus.camera.video.beauty.switch=oplus.switch.video.beauty \
-    ro.oplus.camera.speechassist=true
-
 # ParanoidDoze
 PRODUCT_PACKAGES += \
     ParanoidDoze

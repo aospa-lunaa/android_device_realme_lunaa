@@ -143,6 +143,8 @@ KERNEL_DEFCONFIG := vendor/lahaina-qgki_defconfig
 KERNEL_FRAGMENT_CONFIG := vendor/oplus_yupik_QGKI.config
 
 # Kernel - use custom LLVM toolchain
+KERNEL_SD_LLVM_SUPPORT := true
+
 KERNEL_CUSTOM_LLVM := true
 
 # Kernel - use full LLVM
